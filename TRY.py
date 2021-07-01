@@ -10,6 +10,14 @@ window.configure(background='#ff99bb')
 
 window.resizable(width=False,height=False)
 
+expression = ''
+def press(num):
+	global expression
+	
+	expression = expression + str(num)
+	
+	equation.set(expression)
+
 button_frame = Frame(window,background='#ff99bb')
 button_frame.pack()
 
